@@ -10,7 +10,7 @@ Brown CBC's Workshop Tools' Tutorials
    :maxdepth: 1
    :caption: Contents:
 
-
+   CBC Workshop index <https://compbiocore.github.io/cbc-workshops/>
    
    conda_tutorial
 
