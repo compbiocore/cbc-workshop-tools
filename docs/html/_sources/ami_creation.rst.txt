@@ -16,7 +16,7 @@ AMIs are generally created from an existing image that has been customized in so
 
 The easiest way to create an AMI is from the `console <https://us-east-2.console.aws.amazon.com/console/home?region=us-east-2>`_.  I use the us-east-2 region, so the links I demonstrate here will all be to services in us-east-2.  The other regions have the same services, but some region must be selected in order to proceed, so I will be using us-east-2 throughout for consistency.  Noting the region you use is very important because it will inform how certain later steps are performed.
 
-To begin, click on the 'EC2' link from the general console; doing so will redirect you to the `EC2 dashboard <https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2>`_.  It will look something like this::
+To begin, click on the 'EC2' link from the general console; doing so will redirect you to the `EC2 dashboard <https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2>`_.  It will look something like this:
 
 .. image:: _static/ami_dashboard.png
 
@@ -72,7 +72,7 @@ To connect to an Amazon instance by ssh, you must use a keyfile.  The syntax to 
 
 This file can be found on Oscar at the path::
 
-	oscar keyfile path
+	/gpfs/data/cbc/keys/
 
 It is generally good practice to put the keyfile into the .ssh hidden directory in your home directory.  It is also necessary to ensure that the keyfile has the proper permissions as designated by Amazon::
 
@@ -123,9 +123,9 @@ Now, you'll need to wait a while for the AMI to be created.  This process usuall
 
 **Instantiating the AMI**
 
-Now, we will instantiate 5 copies of the AMI for the purposes of testing.  Select the AMI and then click the blue 'Launch' on top.  You will now have to repeat the earlier steps for configuring the instances.  Everything should be done in the same manner except for the second step, wherein 'Number of instances' should be set to 5::
+Now, we will instantiate 5 copies of the AMI for the purposes of testing.  Select the AMI and then click the blue 'Launch' on top.  You will now have to repeat the earlier steps for configuring the instances.  Everything should be done in the same manner except for the second step, wherein 'Number of instances' should be set to 5:
 
-	ami number 5 image
+.. image:: _static/ami_instantiate_five.png
 
 Then, go through all the pages and apply the same settings we used above - the AMI will not "remember" things like security groups, so you'll need to reapply the 'workshop' security group to ensure the instances are accessible.  Once you're done, wait for them to instantiate and then proceed.
 
@@ -146,6 +146,3 @@ Finally, the script will append ':15500' to each IP, yielding line like '52.15.1
 The resulting text file, 'ips_newline_port.txt', should be sent to Ashok Ragavendran (or whoever else is mutually agreed-upon) for distribution to the users.
 
 It is prudent to manually spot-check a few of these instances to verify that Jupyter is indeed running correctly.  The Jupyter server takes about 60 seconds to actually boot completely up, and before that time passes it will look broken, so please wait for a full minute before attempting to do so or you'll likely observe a false negative.
-
-
-add irkernel to the script at the end, or make a new script

@@ -48,9 +48,7 @@
 <p>AMIs are generally created from an existing image that has been customized in some way.  As such, you will begin by launching an existing ‘base’ AMI that consists of little more than an operating system, build upon it, and then turn it into an AMI of your own.</p>
 <p>The easiest way to create an AMI is from the <a class="reference external" href="https://us-east-2.console.aws.amazon.com/console/home?region=us-east-2">console</a>.  I use the us-east-2 region, so the links I demonstrate here will all be to services in us-east-2.  The other regions have the same services, but some region must be selected in order to proceed, so I will be using us-east-2 throughout for consistency.  Noting the region you use is very important because it will inform how certain later steps are performed.</p>
 <p>To begin, click on the ‘EC2’ link from the general console; doing so will redirect you to the <a class="reference external" href="https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2">EC2 dashboard</a>.  It will look something like this:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">image</span><span class="p">::</span> <span class="n">_static</span><span class="o">/</span><span class="n">ami_dashboard</span><span class="o">.</span><span class="n">png</span>
-</pre></div>
-</div>
+<img alt="_images/ami_dashboard.png" src="_images/ami_dashboard.png" />
 <p>From there, click on the ‘Instances’ link on the left, and then on the blue ‘Launch Instance’ button at the top (the main body of the button, not the arrow on its right edge).  Doing so will then present you with a screen presenting you with a variety of base AMIs to use; we generally use the “Ubuntu Server 16.04” AMI, and will do so for the remainder of this tutorial:</p>
 <img alt="_images/ami_default_selection.png" src="_images/ami_default_selection.png" />
 <p>Next, you must select the instance type, which will inform what hardware capabilities are made available to the instance.  Your AMI will not be locked into the instance type selected here, but as a general rule, it’s a good idea to choose the type you’re likely to end up deploying.  To balance cost and performance, we try to stick to the ‘t2.medium’ (2 CPUs, 4 GB of memory) type that is adequate for running examples in a workshop setting.</p>
@@ -79,7 +77,7 @@
 </pre></div>
 </div>
 <p>This file can be found on Oscar at the path:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">oscar</span> <span class="n">keyfile</span> <span class="n">path</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">gpfs</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">cbc</span><span class="o">/</span><span class="n">keys</span><span class="o">/</span>
 </pre></div>
 </div>
 <p>It is generally good practice to put the keyfile into the .ssh hidden directory in your home directory.  It is also necessary to ensure that the keyfile has the proper permissions as designated by Amazon:</p>
@@ -116,9 +114,7 @@
 <img alt="_images/ami_pending.png" src="_images/ami_pending.png" />
 <p><strong>Instantiating the AMI</strong></p>
 <p>Now, we will instantiate 5 copies of the AMI for the purposes of testing.  Select the AMI and then click the blue ‘Launch’ on top.  You will now have to repeat the earlier steps for configuring the instances.  Everything should be done in the same manner except for the second step, wherein ‘Number of instances’ should be set to 5:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ami</span> <span class="n">number</span> <span class="mi">5</span> <span class="n">image</span>
-</pre></div>
-</div>
+<img alt="_images/ami_instantiate_five.png" src="_images/ami_instantiate_five.png" />
 <p>Then, go through all the pages and apply the same settings we used above - the AMI will not “remember” things like security groups, so you’ll need to reapply the ‘workshop’ security group to ensure the instances are accessible.  Once you’re done, wait for them to instantiate and then proceed.</p>
 <p><strong>Retrieving IPs and Activating Jupyter</strong></p>
 <p>To allow all users to have their own instances, is is necessary to retrieve the IP addresses of the instances that spawn.  Doing so manually would be easy in the case of this toy example; however, in the case of an actual workshop, maually copy-and-pasting 40+ IPs would be very time-consuming and prone to error.  Thus, we have a script that we use to retrieve the IPs in an automated fashion.</p>
@@ -131,7 +127,6 @@
 <p>Finally, the script will append ‘:15500’ to each IP, yielding line like ‘52.15.139.164:15500’ that can be directly pasted into a browser to access the Jupyter process running on that machine.  Jupyter processes are password-protected and the password is ‘cobre’.</p>
 <p>The resulting text file, ‘ips_newline_port.txt’, should be sent to Ashok Ragavendran (or whoever else is mutually agreed-upon) for distribution to the users.</p>
 <p>It is prudent to manually spot-check a few of these instances to verify that Jupyter is indeed running correctly.  The Jupyter server takes about 60 seconds to actually boot completely up, and before that time passes it will look broken, so please wait for a full minute before attempting to do so or you’ll likely observe a false negative.</p>
-<p>add irkernel to the script at the end, or make a new script</p>
 </div>
 
 
