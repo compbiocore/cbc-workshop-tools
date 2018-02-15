@@ -145,4 +145,12 @@ Finally, the script will append ':15500' to each IP, yielding line like '52.15.1
 
 The resulting text file, 'ips_newline_port.txt', should be sent to Ashok Ragavendran (or whoever else is mutually agreed-upon) for distribution to the users.
 
+The script can be found at the following link:
+
+https://github.com/compbiocore/workshop-utilities/blob/master/access_ips.sh
+
+and then run using::
+
+	bash access_ips.sh
+
 It is prudent to manually spot-check a few of these instances to verify that Jupyter is indeed running correctly.  The Jupyter server takes about 60 seconds to actually boot completely up, and before that time passes it will look broken, so please wait for a full minute before attempting to do so or you'll likely observe a false negative.

@@ -126,6 +126,12 @@
 <p>Once the IPs are retrieved, the script will process them so that each is present on its own line in a text file.  The script will then iterate over this file line-by-line, log into each IP, and create a detached instance of GNU screen containing an active Jupyter process.  These screens will run indefiniely, keeping the Jupyter process alive.</p>
 <p>Finally, the script will append ‘:15500’ to each IP, yielding line like ‘52.15.139.164:15500’ that can be directly pasted into a browser to access the Jupyter process running on that machine.  Jupyter processes are password-protected and the password is ‘cobre’.</p>
 <p>The resulting text file, ‘ips_newline_port.txt’, should be sent to Ashok Ragavendran (or whoever else is mutually agreed-upon) for distribution to the users.</p>
+<p>The script can be found at the following link:</p>
+<p><a class="reference external" href="https://github.com/compbiocore/workshop-utilities/blob/master/access_ips.sh">https://github.com/compbiocore/workshop-utilities/blob/master/access_ips.sh</a></p>
+<p>and then run using:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">bash</span> <span class="n">access_ips</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
 <p>It is prudent to manually spot-check a few of these instances to verify that Jupyter is indeed running correctly.  The Jupyter server takes about 60 seconds to actually boot completely up, and before that time passes it will look broken, so please wait for a full minute before attempting to do so or you’ll likely observe a false negative.</p>
 </div>
 
