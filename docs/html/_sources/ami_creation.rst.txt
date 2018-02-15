@@ -153,4 +153,9 @@ and then run using::
 
 	bash access_ips.sh
 
+Its output will look something like this:
+
+.. image:: _static/script_output.png
+
+
 It is prudent to manually spot-check a few of these instances to verify that Jupyter is indeed running correctly.  The Jupyter server takes about 60 seconds to actually boot completely up, and before that time passes it will look broken, so please wait for a full minute before attempting to do so or you'll likely observe a false negative.
