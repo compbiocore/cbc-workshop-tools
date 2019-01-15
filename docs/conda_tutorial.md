@@ -17,7 +17,8 @@ To install miniconda, simply go to the [miniconda website](https://conda.io/mini
 
 Rather than being a typical executible file, the conda installer for OS X (and Linux) is actually a script that must be run from the command line.  To do so, first open the terminal:
 
-[terminal screenshot]
+![blank terminal](https://github.com/compbiocore/cbc-workshop-tools/blob/master/docs/assets/blank_terminal.png "Terminal")
+
 
 Once you have done so, type::
 
