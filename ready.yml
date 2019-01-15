@@ -1,0 +1,8 @@
+repo:             cbc-workshop-tools
+site_name:        "CBC Workshop Tools"
+authors:      
+  - name: Andrew Leith
+    github_user: andrew-leith
+site_description: "This repository contains various tutorials for installing and configuring the tools used in the Computational Biology Core's workshops."
+docs_url:         https://compbiocore.github.io/cbc-workshop-tools
+type:             tutorial    # required. choose one of [software, tutorial, workshop, documentation]

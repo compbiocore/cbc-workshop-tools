@@ -1,5 +1,4 @@
-Jupyter Tutorial
-================
+# Jupyter Tutorial
 
 
 To install Jupyter, please first install conda.  A link to the conda installation tutorial can be found on the sidebar to the left.
@@ -10,7 +9,8 @@ Jupyter is a piece of software for interactively writing and running code in a w
 
 **Installing Jupyter**
 
-The best way to install Jupyter is using the `conda package manager <https://compbiocore.github.io/cbc-workshop-tools/html/conda_tutorial.html>`_.  The rest of this guide will assume that you have a functioning installation of conda on the system you're using to install Jupyter.
+The best way to install Jupyter is using the [conda package manager](https://compbiocore.github.io/cbc-workshop-tools/html/conda_tutorial.html>).  The rest of this guide will assume that you have a functioning installation of conda on the system you're using to install Jupyter.
+
 
 Actually installing Jupyter is very simple - simply open a terminal and type::
 
@@ -34,4 +34,4 @@ This command installs the IRkernel package from the IRkernel github (the 'IRkern
 
 This command runs the installspec() function within the IRkernel package.  This command syntax, with the two colons, is a way of explicitly calling a function from within a specific package; as such, you do not need to call library() first.  installspec() will automatically configure your Jupyter R kernel based on the installation of R you have on your system.
 
-Full documentation relating to IRkernel can be found at `their repository <https://github.com/IRkernel/IRkernel>`_.
+Full documentation relating to IRkernel can be found at [their repository](https://github.com/IRkernel/IRkernel>).

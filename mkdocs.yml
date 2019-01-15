@@ -1,0 +1,28 @@
+site_name:        Computational Biology Core - Brown University
+site_author:      Andrew Leith
+repo_url:         https://github.com/compbiocore/cbc-workshop-tools
+site_description: CBC Workshop Tools
+site_url: https://compbiocore.github.io/ #this is the main site!
+
+theme:
+  name: material
+  palette:
+    primary: 'blue grey'
+    accent: 'indigo'
+  logo: images/cbc-logo.svg
+
+extra_css:
+  - styles/dark_mode.css
+
+markdown_extensions:
+  - extra
+  - tables
+  - fenced_code
+  - admonition
+  - codehilite
+  - footnotes
+
+nav:
+  - Home: 'index.md'
+  - Conda Tutorial: 'conda_tutorial.md'
+  - Jupyter Tutorial: 'jupyter_tutorial.md'
