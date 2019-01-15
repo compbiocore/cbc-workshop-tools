@@ -13,7 +13,7 @@ Most, if not all, of the tools we use in our workshops are available through con
 
 There are multiple versions of conda, differentiated by two things: the number of default packages that it installs, and the version of python it uses.  For our purposes, we recommend using 'miniconda' - the version of conda with the fewest default packages, to enable the most customized installation - and python 2.7.
 
-To install miniconda, simply go to the [miniconda website](https://conda.io/miniconda.html>) and select the correct version for your operating system.  miniconda is available for Windows, OS X, and Linux; the installation for Windows uses a typical .exe file, while the process on OS X and Linus is a bit more involved.  We will therefore describe the OS X (conda for Python 2) installation process here.
+To install miniconda, simply go to the [miniconda website](https://conda.io/miniconda.html) and select the correct version for your operating system.  miniconda is available for Windows, OS X, and Linux; the installation for Windows uses a typical .exe file, while the process on OS X and Linus is a bit more involved.  We will therefore describe the OS X (conda for Python 2) installation process here.
 
 Rather than being a typical executible file, the conda installer for OS X (and Linux) is actually a script that must be run from the command line.  To do so, first open the terminal:
 
