@@ -20,7 +20,7 @@ Rather than being a typical executible file, the conda installer for OS X (and L
 ![blank terminal](https://raw.githubusercontent.com/compbiocore/cbc-workshop-tools/master/docs/assets/blank_terminal.png "Terminal")
 
 
-Once you have done so, type::
+Once you have done so, type:
 
 	cd ~/Downloads
 	bash Miniconda2-latest-MacOSX-x86_64.sh
@@ -29,13 +29,11 @@ Once you have done so, type::
 
 Running this installer will lead to an interactive session wherein you are asked to accept a licensing agreement.  Do so, and accept the default options as well.
 
-[take screenshots while installing conda on person machine tonight]
-
-With these steps completed, conda is now installed.  One of the previous steps added conda to your 'PATH', which is the list of directories in which your computer looks for software when you type a command into the terminal.  However, this update will only take effect once you restart your terminal.  You can do so with the folllowing command::
+With these steps completed, conda is now installed.  One of the previous steps added conda to your 'PATH', which is the list of directories in which your computer looks for software when you type a command into the terminal.  However, this update will only take effect once you restart your terminal.  You can do so with the folllowing command:
 
 	source ~./bash_profile
 
-To verify that conda is installed, type::
+To verify that conda is installed, type:
 
 	conda --help
 

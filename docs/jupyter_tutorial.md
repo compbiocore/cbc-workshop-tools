@@ -12,7 +12,7 @@ Jupyter is a piece of software for interactively writing and running code in a w
 The best way to install Jupyter is using the [conda package manager](https://compbiocore.github.io/cbc-workshop-tools/conda_tutorial/).  The rest of this guide will assume that you have a functioning installation of conda on the system you're using to install Jupyter.
 
 
-Actually installing Jupyter is very simple - simply open a terminal and type::
+Actually installing Jupyter is very simple - simply open a terminal and type:
 
 	conda install jupyter
 
@@ -20,15 +20,15 @@ and conda will take care of the entire process!  By default, Jupyter can only ru
 
 **Configuring Jupyter to Run R**
 
-There are several R packages that must be installed in order to allow Jupyter to recognize R.  To prepare R, open an interactive R session and install the 'devtools' package by typing the following into R::
+There are several R packages that must be installed in order to allow Jupyter to recognize R.  To prepare R, open an interactive R session and install the 'devtools' package by typing the following into R:
 
 	install.packages("devtools")
 
-devtools is an R package that allows you to install packages from locations other than the typical centralized repositories like CRAN and Bioconductor.  Once devtools is installed, install the 'IRkernel' package by typing::
+devtools is an R package that allows you to install packages from locations other than the typical centralized repositories like CRAN and Bioconductor.  Once devtools is installed, install the 'IRkernel' package by typing:
 
 	devtools::install_github('IRkernel/IRkernel')
 
-This command installs the IRkernel package from the IRkernel github (the 'IRkernel/IRkernel' part is not a typo - it is specifying the github repository name and then the package name, which happen to be called the same thing).  The IRkernel package is a Jupyter R 'kernel' - a piece of software that allows Jupyter to interact with R.  Once the IRkernel package is installed, there is only one remaining step.  Once again, in your R window, type::
+This command installs the IRkernel package from the IRkernel github (the 'IRkernel/IRkernel' part is not a typo - it is specifying the github repository name and then the package name, which happen to be called the same thing).  The IRkernel package is a Jupyter R 'kernel' - a piece of software that allows Jupyter to interact with R.  Once the IRkernel package is installed, there is only one remaining step.  Once again, in your R window, type:
 
 	IRkernel::installspec()
 
