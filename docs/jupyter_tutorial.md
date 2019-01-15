@@ -9,7 +9,7 @@ Jupyter is a piece of software for interactively writing and running code in a w
 
 **Installing Jupyter**
 
-The best way to install Jupyter is using the [conda package manager](https://compbiocore.github.io/cbc-workshop-tools/html/conda_tutorial.html).  The rest of this guide will assume that you have a functioning installation of conda on the system you're using to install Jupyter.
+The best way to install Jupyter is using the [conda package manager](https://compbiocore.github.io/cbc-workshop-tools/conda_tutorial/).  The rest of this guide will assume that you have a functioning installation of conda on the system you're using to install Jupyter.
 
 
 Actually installing Jupyter is very simple - simply open a terminal and type::
