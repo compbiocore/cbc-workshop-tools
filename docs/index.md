@@ -1,8 +1,8 @@
-# Brown CBC's Workshop Tools' Tutorials
+# Brown CBC's Introduction to Jupyter and Conda
 
-[![License](https://img.shields.io/aur/license/yaourt.svg)](https://raw.githubusercontent.com/compbiocore/cbc-workshop-tools/master/LICENSE)
+[![License](https://img.shields.io/github/license/compbiocore/intro-to-jupyter-and-conda.svg)](https://raw.githubusercontent.com/compbiocore/intro-to-jupyter-and-conda/master/LICENSE)
 
-This site serves as an index for tutorials regarding the tools and infrastructure used in the CBC workshop series.
+This site serves as an index for tutorials regarding the tools and infrastructure used in the CBC workshop series, most notably Jupyter and Conda.
 
 ### Authors
 

@@ -1,7 +1,7 @@
 site_name:        Computational Biology Core - Brown University
 site_author:      Andrew Leith
-repo_url:         https://github.com/compbiocore/cbc-workshop-tools
-site_description: CBC Workshop Tools
+repo_url:         https://github.com/compbiocore/intro-to-jupyter-and-conda
+site_description: Introduction to Jupyter and Conda
 site_url: https://compbiocore.github.io/ #this is the main site!
 google_analytics: ['UA-115983496-2', 'compbiocore.github.io']
 
